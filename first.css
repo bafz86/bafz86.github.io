@@ -1,11 +1,24 @@
+/*Beginning of CSS File*/
 body {
 	background-color: powderblue;
+	font-size: 13pt;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	text-shadow: 5px 2px 4px grey;
 }
 h1 {
 	color: blue;
 }
 p {
 	color: red;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+p2 {
+	color: orange;
+	font-size: 18px;
 }
 
 table, tr, td {
@@ -14,3 +27,39 @@ border-collapse: collapse;
 text-align: center;
 table-layout: fixed;
 }
+
+.column {
+	float: left;
+}
+
+.column.side {
+	width: 25%;
+	border: 5px solid #cecece;
+	border-color: purple;
+	background-color: turquoise;
+	height: 200px;
+}
+
+.column.middle {
+	width: 48%;
+	border: 5px solid #cecece;
+	border-color: pink;
+	background-color: green;
+	height: 200px;
+}
+
+/*Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout - makes the three columns stack
+   on top of each other instead of next to each other. */
+ @media screen and (max-width: 600px) {
+	.column.side, .column.middle {
+	  width: 100%;
+	 }
+  }
+ /*End of CSS File*/

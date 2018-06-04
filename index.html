@@ -1,23 +1,60 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="first.css">
 		<title> Welcome Page </title>
 	</head>
-	<body>
+	<body onload="return enteringweb()" onunload="return leavingweb()">
+	  	  <!-- Welcome Message -->
 	  <h1>Welcome to Brendan's Webpage!</h1>
 	  <p>This is a basic website that will evolve overtime.
 		 Check back for changes often!</p>
-	<table>
+	  <!-- End Welcome -->
+	  <!-- Experimental Columns -->
+	  <div class="row">
+	  <div class="column side">
+	  <h2>Past Education</h2>
+	  <ul>
+		<li> St. Elizabeth / St. Robert Regional </li>
+		<li> Christian Brothers College High School </li>
+		<li> Missouri S&T (Science and Technology) </li>
+	  </ul>
+	  </div>
+	  <div class="column middle">
+	  <h2><strong>About me</strong></h2>
+	  <p2><strong> My name is Brendan. I am currently working to increase my knowledgein Computer Science.
+				  This Summer, I am doing so by working on web design. This page I am designing is what a
+				  a project I hope to turn into a much larger scale production when I learn more about how
+				  to successfully store data in back-end databases. That's all for now! </strong></p2>
+	  </div>
+	  <div class="column side">
+	  <h2>Future Plans</h2>
+	  <ul>
+		<li> Finish education at S&T </li>
+		<li> Find a stable career job </li>
+		<li> Branch out to more interesting jobs as I gain experience </li>
+	  </ul>
+	  </div>
+	  </div>
+	  <!-- End of Columns -->
+	<!-- Update Table -->
+	<table align="center">
+		<tr>
+			<th><strong>Update Number</strong></td>
+			<th><strong>Date Modified</strong></td>
+			<th><strong>Description</strong></td>
 		<tr>
 			<td><strong>First Update: </strong></td>
 			<td><strong>June 1st, 2018 </strong></td>
+			<td><i>Initial Website Created. </i></td>
 		</tr>
 		<tr>
 			<td><strong>Second Update: </strong></td>
 			<td><strong>June 4th, 2018 </strong></td>
-			<td><i>Added link to SoloLearn Profile. </i></td>
+			<td><i>Added links to SoloLearn Profile. </i></td>
 		</tr>
 	</table>
+	<!-- End Update Table -->
 	<!-- My contact info section -->
 	<div class="section" id="contact_info">
 		<h1><span>My Links</span></h1>
@@ -25,8 +62,25 @@
 			<a href="https://www.sololearn.com/Profile/1127973"; target="_blank">
 				<img alt="SoloLearn" src="https://www.sololearn.com/Uploads/icons/sololearn.png" />
 			</a>
+			<a href="https://www.facebook.com/brendan.fink.3"; target="_blank">
+				<img alt="Facebook" src="https://www.sololearn.com/Uploads/icons/facebook.png" />
+			</a>
+			<a href="https://twitter.com/Kodd1000"; target="_blank">
+				<img alt="Twitter" src="https://www.sololearn.com/Uploads/icons/twitter.png" />
+			</a>
 		</div>
 	</div>
 	<!-- End contact info section -->
+	<!-- JavaScript -->
+	<script>
+	function enteringweb(){
+		var hello = alert("Welcome to my website! It's a work in progress, so please don't judge!");
+		return hello;
+		}
+	function leavingweb() {
+		var bye = alert("How impressed were you with this design? (1-10)");
+		return bye;
+		}
+	</script>
 	</body>
 </html>
