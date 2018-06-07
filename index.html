@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script type="text/javascript" src="functionality.js"></script>
 		<link rel="stylesheet" href="first.css">
 		<title> Welcome Page </title>
 	</head>
 	<body onload="return enteringweb()" onunload="return leavingweb()">
+	<!-- Dropdown Experiment -->
+	<div class="dropdown">
+	  <button onclick="myFunction()" class="dropbtn">Entertainment</button>
+	  <div id="myDropdown" class="dropdown-content">
+	    <a href="https://www.gamestop.com/">Gamestop</a>
+		<a href="https://www.youtube.com/">Youtube</a>
+		<a href="https://www.twitch.tv/">Twitch</a>
+	  </div>
+	</div>
 	  	  <!-- Welcome Message -->
 		  <aside><a href="NiceCalendar.html"; target="_blank"> View Calendar </aside></a>
 	  <h1>Welcome to Brendan's Webpage!</h1>
 	  <p>This is a basic website that will evolve overtime.
 		 Check back for changes often!</p>
 	  <!-- End Welcome -->
-	  <!-- Experimental Columns -->
+	  <!-- Three Columns -->
 	  <div class="row">
 	  <div class="column side">
 	  <h2>Past Education</h2>
@@ -24,7 +34,7 @@
 	  <div class="column middle">
 	  <h2><strong>About me</strong></h2>
 	  <p2><strong> My name is Brendan. I am currently working to increase my knowledgein Computer Science.
-				  This Summer, I am doing so by working on web design. This page I am designing is what a
+				  This Summer, I am doing so by working on web design. This page I am designing is
 				  a project I hope to turn into a much larger scale production when I learn more about how
 				  to successfully store data in back-end databases. That's all for now! </strong></p2>
 	  </div>
@@ -38,6 +48,21 @@
 	  </div>
 	  </div>
 	  <!-- End of Columns -->
+	  <!-- Experimental Google Bar -->
+	 <div>
+	 <center>
+	 <FORM method=GET action="http://www.google.com/search">
+	 <TABLE bgcolor="FFFFFF"><tr><td>
+	 <A HREF="http://www.google.com/"; target="_blank">
+	 <IMG alt="Google" SRC="http://www.google.com/logos/Logo_40wht.gif" <br></A>
+	 <INPUT TYPE=text name=q size=31 maxlength=255 value="">
+	 <INPUT TYPE=hidden name=h1 value="en">
+	 <INPUT type=submit name=btnG VALUE="Google Search">
+	 </td></tr></TABLE>
+	 </FORM>
+	 </center>
+	 </div>
+	  <!-- End Google Bar -->
 	<!-- Update Table -->
 	<table align="center">
 		<tr>
@@ -59,6 +84,11 @@
 			<td><strong>June 6th, 2018 </strong></td>
 			<td><i>Added "View Calendar" Module </strong></td>
 		</tr>
+		<tr>
+			<td><strong>Fourth Update: </strong></td>
+			<td><strong>June 7th, 2018 </strong></td>
+			<td><i>Added Google and Entertainment Tabs </i></td>
+		</tr>
 	</table>
 	<!-- End Update Table -->
 	<!-- My contact info section -->
@@ -77,16 +107,5 @@
 		</div>
 	</div>
 	<!-- End contact info section -->
-	<!-- JavaScript -->
-	<script>
-	function enteringweb(){
-		var hello = alert("Welcome to my website! It's a work in progress, so please don't judge!");
-		return hello;
-		}
-	function leavingweb() {
-		var bye = alert("How impressed were you with this design? (1-10)");
-		return bye;
-		}
-	</script>
 	</body>
 </html>
