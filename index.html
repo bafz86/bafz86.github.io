@@ -5,7 +5,16 @@
 		<link rel="stylesheet" href="first.css">
 		<title> Welcome Page </title>
 	</head>
-	<body onload="return enteringweb()" onunload="return leavingweb()">
+	<body>
+	<!-- Sidenav Experiment-->
+	<div class="sidenav">
+		<a href="Education.html">Past Education</a>
+		<a href="NiceCalendar.html">Calendar</a>
+		<a href="Career.html">Future Career Goals</a>
+		<a href="AboutMe.html">About Me</a>
+	</div>
+	<!-- End Sidenav-->
+	<div class="main">
 	<!-- Dropdown Experiment -->
 	<div class="dropdown">
 	  <button onclick="myFunction()" class="dropbtn">Entertainment</button>
@@ -14,38 +23,20 @@
 		<a href="https://www.youtube.com/">Youtube</a>
 		<a href="https://www.twitch.tv/">Twitch</a>
 	  </div>
+	  <button onclick="nextFunction()" class="nextdropbtn">Productivity</button>
+	  <div id="nextDropdown" class="more-dropdown-content">
+		<a href="https://canvas.instructure.com/">Canvas</a>
+		<a href="https://www.google.com/gmail/">Gmail</a>
+		<a href="https://www.google.com/drive/">Google Drive</a>
+	  </div>
 	</div>
 	  	  <!-- Welcome Message -->
-		  <aside><a href="NiceCalendar.html"; target="_blank"> View Calendar </aside></a>
 	  <h1>Welcome to Brendan's Webpage!</h1>
 	  <p>This is a basic website that will evolve overtime.
 		 Check back for changes often!</p>
 	  <!-- End Welcome -->
 	  <!-- Three Columns -->
 	  <div class="row">
-	  <div class="column side">
-	  <h2>Past Education</h2>
-	  <ul>
-		<li> St. Elizabeth / St. Robert Regional </li>
-		<li> Christian Brothers College High School </li>
-		<li> Missouri S&T (Science and Technology) </li>
-	  </ul>
-	  </div>
-	  <div class="column middle">
-	  <h2><strong>About me</strong></h2>
-	  <p2><strong> My name is Brendan. I am currently working to increase my knowledgein Computer Science.
-				  This Summer, I am doing so by working on web design. This page I am designing is
-				  a project I hope to turn into a much larger scale production when I learn more about how
-				  to successfully store data in back-end databases. That's all for now! </strong></p2>
-	  </div>
-	  <div class="column side">
-	  <h2>Future Plans</h2>
-	  <ul>
-		<li> Finish education at S&T </li>
-		<li> Find a stable career job </li>
-		<li> Branch out to more interesting jobs as I gain experience </li>
-	  </ul>
-	  </div>
 	  </div>
 	  <!-- End of Columns -->
 	  <!-- Experimental Google Bar -->
@@ -89,6 +80,11 @@
 			<td><strong>June 7th, 2018 </strong></td>
 			<td><i>Added Google and Entertainment Tabs </i></td>
 		</tr>
+		<tr>
+			<td><strong>Fifth Update: </strong></td>
+			<td><strong>June 27th, 2018 </strong></td>
+			<td><i>Added Side Bar / Several Additional Fixes </i></td>
+		</tr>
 	</table>
 	<!-- End Update Table -->
 	<!-- My contact info section -->
@@ -104,8 +100,12 @@
 			<a href="https://twitter.com/Kodd1000"; target="_blank">
 				<img alt="Twitter" src="https://www.sololearn.com/Uploads/icons/twitter.png" />
 			</a>
+			<a href="https://www.linkedin.com/in/bafz86/"; target="_blank">
+				<img alt="LinkedIn" src="https://logo.clearbit.com/linkedin.com" />
+			</a>
 		</div>
 	</div>
+</div>
 	<!-- End contact info section -->
 	</body>
 </html>
